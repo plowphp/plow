@@ -1,11 +1,9 @@
 <?php
 
-use NunoMaduro\SkeletonPhp\Example;
+use Plow\Example;
 
 it('foo', function (): void {
-    $example = new Example;
-
-    $result = $example->foo();
+    $result = (new Example)->foo();
 
     expect($result)->toBe('bar');
 });

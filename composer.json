@@ -1,12 +1,12 @@
 {
-    "name": "nunomaduro/skeleton-php",
+    "name": "plowphp/plow",
     "description": "A skeleton repository for my packages",
     "keywords": ["php", "skeleton", "package"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Mavrick Thiry",
+            "email": "contact@maved.fr"
         }
     ],
     "require": {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "NunoMaduro\\SkeletonPhp\\": "src/"
+            "Plow\\": "src/"
         }
     },
     "autoload-dev": {

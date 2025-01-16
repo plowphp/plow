@@ -1,0 +1,6 @@
+name: Tests 3
+on:
+  - push
+  - pull_request
+jobs:
+  ci: {  }

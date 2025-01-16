@@ -10,7 +10,9 @@
         }
     ],
     "require": {
-        "php": "^8.3.0"
+        "php": "^8.3.0",
+        "ext-yaml": "*",
+        "symfony/yaml": "^7.2"
     },
     "require-dev": {
         "laravel/pint": "^1.18.1",
@@ -45,7 +47,7 @@
         "test:refacto": "rector --dry-run",
         "test:lint": "pint --test",
         "test:types": "phpstan analyse --ansi",
-        "test:unit": "pest --colors=always --coverage --parallel --min=100",
+        "test:unit": "pest --colors=always --parallel --min=100",
         "test": [
             "@test:refacto",
             "@test:lint",

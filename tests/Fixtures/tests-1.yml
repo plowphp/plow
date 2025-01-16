@@ -1,0 +1,4 @@
+name: Tests 1
+on: {  }
+jobs:
+  ci: {  }

@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^8.3.0",
-        "ext-yaml": "*",
+        "nunomaduro/termwind": "^1.17.0|^2.3.0",
         "symfony/yaml": "^7.2"
     },
     "require-dev": {

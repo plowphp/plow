@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use Plow\Console\Commands\GenerateCommand;
+use Symfony\Component\Console\Application;
+
+foreach ([
+    dirname(__DIR__, 4).'/vendor/autoload.php',
+    dirname(__DIR__).'/vendor/autoload.php',
+] as $path) {
+    if (file_exists($path)) {
+        include_once $path;
+
+        break;
+    }
+}
+
+$application = new Application(
+    'Plow',
+    '0.1.0'
+);
+
+$application->add(new GenerateCommand());
+
+$application->run();
